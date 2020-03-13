@@ -17,7 +17,7 @@ All paths starts with `/api`.
 Returns full information about all countries. Data should be sorted, but it's not guaranteed. If there is no informations about country stats, key for country doesnt exist. All countries accessible using [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)
 
 Example response:
-```json
+```jsonc
 {
   "data": {
     "POL": {
