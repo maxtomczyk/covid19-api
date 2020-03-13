@@ -1,0 +1,24 @@
+{
+  "name": "covid19-api",
+  "version": "1.0.0",
+  "description": "An API service for fetching data about COVID-19 spread across the world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maksymilian Tomczyk <m.tomczyk.dev@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "bluebird": "^3.7.2",
+    "country-regex": "^1.1.0",
+    "cron": "^1.8.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^5.2.0",
+    "koa-joi-router": "^6.0.2",
+    "node-cache": "^5.1.0",
+    "puppeteer": "^2.1.1",
+    "redis": "^3.0.2"
+  }
+}
