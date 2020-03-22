@@ -211,7 +211,7 @@
   "SDN": "Sudan",
   "SUR": "Suriname",
   "SJM": "Svalbard and Jan Mayen Islands",
-  "SWZ": "Swaziland",
+  "SWZ": "Kingdom of Eswatini",
   "SWE": "Sweden",
   "CHE": "Switzerland",
   "SYR": "Syrian Arab Republic (Syria)",
@@ -247,5 +247,6 @@
   "ZMB": "Zambia",
   "ZWE": "Zimbabwe",
   "XDP": "Diamond Princess",
-  "XCI": "Channel Islands"
+  "XCI": "Channel Islands",
+  "XKX": "Kosovo"
 }
