@@ -17,8 +17,8 @@ function getCountryCode (c) {
   if (!code) {
     if (c === 'CD') code = 'COD'
     if (c === 'Saint Martin') code = 'SXM'
-    if (c === 'Diamond Princess') code = 'DP'
-    if (c === 'Channel Islands') code = 'CI'
+    if (c === 'Diamond Princess') code = 'XDP'
+    if (c === 'Channel Islands') code = 'XCI'
   }
   if (!code) console.log('[WARN] No code found for country: ' + c)
   return code

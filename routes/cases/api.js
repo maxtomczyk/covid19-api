@@ -2,7 +2,7 @@ const cache = require('../../modules/cache')
 
 async function list (ctx) {
   try {
-    const code = ctx.params.code.toUpperCase()
+    let code = ctx.params.code.toUpperCase()
     const data = await cache.baselab()
 
     if (!data) {
@@ -21,6 +21,7 @@ async function list (ctx) {
         provider: data.provider
       }
     } else {
+      if(code.length === 2) code = 'X' + code
       const c = data.countries[code]
       if (!c) {
         ctx.status = 404
