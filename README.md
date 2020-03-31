@@ -10,6 +10,7 @@ API uses [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) 
 | Diamond Princess | "XDP" |
 | Channel Islands  | "XCI" |
 | Kosovo           | "XKX" |
+| MS Zaandam       | "XZM" |
 
 ### Version 1.1.0 changes
 

@@ -6,6 +6,7 @@ function removeEmojis(s) {
 
 function getCountryCode(c) {
   c = removeEmojis(c).trim()
+  if (!c) return
   let code = null
   for (const k in countryRegex) {
     const reg = new RegExp(countryRegex[k], 'gmi')
