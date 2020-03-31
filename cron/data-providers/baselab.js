@@ -45,7 +45,7 @@ module.exports = async function () {
       mortalityRate: totalRow[5],
       revoveryRate: totalRow[6]
     }
-    data.shift() // Remove total outside china
+
     for (const row of data) {
       const c = shared.getCountryCode(row[0])
       res[c] = {
