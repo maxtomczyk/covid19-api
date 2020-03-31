@@ -21,6 +21,7 @@ function getCountryCode(c) {
     else if (c === 'Channel Islands') code = 'XCI'
     else if (c === 'XK') code = 'XKX'
     else if (c === 'Eswatini') code = 'SWZ'
+    else if (c === 'MS Zaandam') code = 'XZM'
   }
   if (!code) console.log('[WARN] No code found for country: ' + c)
   return code
