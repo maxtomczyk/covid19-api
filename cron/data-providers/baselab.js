@@ -30,7 +30,7 @@ module.exports = async function () {
       rows.forEach(row => {
         const country = row.querySelector('th').innerText
         const d = row.querySelectorAll('td')
-        const r = [country, +d[0].innerText, +d[1].innerText, +d[2].innerText, +d[3].innerText, percents(d[4].innerText), percents(d[5].innerText)]
+        const r = [country, +d[0].innerText, +d[2].innerText, +d[3].innerText, +d[5].innerText, percents(d[6].innerText), percents(d[7].innerText)]
         res.push(r)
       })
       return res
