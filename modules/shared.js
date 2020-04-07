@@ -1,10 +1,10 @@
 const countryRegex = require('country-regex')
 
-function removeEmojis(s) {
+function removeEmojis (s) {
   return s.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/gmi, '')
 }
 
-function getCountryCode(c) {
+function getCountryCode (c) {
   c = removeEmojis(c).trim()
   if (!c) return
   let code = null
@@ -23,6 +23,7 @@ function getCountryCode(c) {
     else if (c === 'XK') code = 'XKX'
     else if (c === 'Eswatini') code = 'SWZ'
     else if (c === 'MS Zaandam') code = 'XZM'
+    else if (c === 'SS') code = 'SSD'
   }
   if (!code) console.log('[WARN] No code found for country: ' + c)
   return code
