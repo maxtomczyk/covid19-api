@@ -52,7 +52,6 @@ module.exports = async function () {
 
     for (const row of data) {
       const c = shared.getCountryCode(row[0])
-      console.log(row)
       res[c] = {
         infections: row[1],
         activeCases: row[2],
