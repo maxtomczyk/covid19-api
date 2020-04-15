@@ -25,12 +25,16 @@ module.exports = async function () {
         return parseFloat((parseFloat(s.replace('%', '')) / 100).toFixed(5))
       }
 
+      function n (s) {
+        return +(s.replace(/,/g, ''))
+      }
+
       const rows = document.querySelectorAll('.country_data_rows > tr')
       const res = []
       rows.forEach(row => {
         const country = row.querySelector('th').innerText
         const d = row.querySelectorAll('td')
-        const r = [country, +d[0].innerText, +d[2].innerText, +d[3].innerText, +d[5].innerText, percents(d[6].innerText), percents(d[7].innerText)]
+        const r = [country, n(d[0].innerText), n(d[2].innerText), n(d[3].innerText), n(d[5].innerText), percents(d[6].innerText), percents(d[7].innerText)]
         res.push(r)
       })
       return res
@@ -48,6 +52,7 @@ module.exports = async function () {
 
     for (const row of data) {
       const c = shared.getCountryCode(row[0])
+      console.log(row)
       res[c] = {
         infections: row[1],
         activeCases: row[2],
