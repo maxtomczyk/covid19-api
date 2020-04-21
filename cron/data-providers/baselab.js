@@ -48,6 +48,7 @@ module.exports = async function () {
       recovered: totalRow[4],
       mortalityRate: totalRow[5],
       revoveryRate: totalRow[6],
+      recoveryRate: totalRow[6]
     }
 
     for (const row of data) {
@@ -59,6 +60,7 @@ module.exports = async function () {
         recovered: row[4],
         mortalityRate: row[5],
         revoveryRate: row[6],
+        recoveryRate: row[6]
       }
     }
     const state = {
