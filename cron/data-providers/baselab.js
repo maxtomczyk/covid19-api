@@ -43,8 +43,8 @@ module.exports = async function () {
     const totalRow = data.shift()
     const total = {
       infections: totalRow[1],
-      activeCases: totalRow[2],
-      deaths: totalRow[3],
+      activeCases: totalRow[3],
+      deaths: totalRow[2],
       recovered: totalRow[4],
       mortalityRate: totalRow[5],
       revoveryRate: totalRow[6],
@@ -53,10 +53,11 @@ module.exports = async function () {
 
     for (const row of data) {
       const c = shared.getCountryCode(row[0])
+      console.log(row)
       res[c] = {
         infections: row[1],
-        activeCases: row[2],
-        deaths: row[3],
+        activeCases: row[3],
+        deaths: row[2],
         recovered: row[4],
         mortalityRate: row[5],
         revoveryRate: row[6],
