@@ -34,7 +34,7 @@ module.exports = async function () {
       rows.forEach(row => {
         const country = row.querySelector('th').innerText
         const d = row.querySelectorAll('td')
-        const r = [country, n(d[0].innerText), n(d[2].innerText), n(d[3].innerText), n(d[5].innerText), percents(d[6].innerText), percents(d[7].innerText)]
+        const r = [country, n(d[0].innerText), n(d[1].innerText), n(d[4].innerText), n(d[5].innerText), percents(d[6].innerText), percents(d[7].innerText)]
         res.push(r)
       })
       return res
@@ -47,7 +47,7 @@ module.exports = async function () {
       deaths: totalRow[3],
       recovered: totalRow[4],
       mortalityRate: totalRow[5],
-      recoveryRate: totalRow[6]
+      revoveryRate: totalRow[6],
     }
 
     for (const row of data) {
@@ -58,7 +58,7 @@ module.exports = async function () {
         deaths: row[3],
         recovered: row[4],
         mortalityRate: row[5],
-        recoveryRate: row[6]
+        revoveryRate: row[6],
       }
     }
     const state = {
